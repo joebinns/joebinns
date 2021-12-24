@@ -1,7 +1,7 @@
 # Welcome!
 
 Feel free to poke around!<br/>
-Check out the pinned repositories for creations ready for the public.
+Check out the pinned repositories if you're after creations ready for the public.
 
 Interested in what's being done? Visit [my website](https://joebinns.com/).
 
