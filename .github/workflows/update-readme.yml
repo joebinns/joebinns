@@ -10,6 +10,8 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
+    - uses: actions/checkout@v2
+    
     - name: GitHub - Activity - Readme
       # You may pin to the exact commit or the version.
       # uses: jamesgeorge007/github-activity-readme@338f4f82e1476c1519ab946bacba0ff3d8a23b92
