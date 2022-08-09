@@ -2,7 +2,7 @@
 Feel free to **poke around**!<br/>
 Check out the pinned repositories if you're looking for creations ready for the public.<br/>
 <br/>
-Currently working on [*joebinns/stylised-character-controller*](https://github.com/joebinns/stylised-character-controller).<br/>
+Currently working on [*joebinns/clay*](https://github.com/joebinns/clay).<br/>
 Interested in anything you see? **Get involved**!<br/>
 <br/>
 Visit [my website](https://joebinns.com/) for more.<br/>
