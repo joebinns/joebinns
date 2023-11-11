@@ -1,4 +1,4 @@
-# Hello!
+# Hello, I'm Joe.
 Currently working on [*joebinns/gameplay-mathematics*](https://github.com/joebinns/gameplay-mathematics).<br/>
 <br/>
 Interested in anything you see? **Reach out**!<br/>
