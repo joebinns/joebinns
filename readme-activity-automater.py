@@ -61,27 +61,29 @@ for i in range(min(len(allCommits), MAX_ENTRIES)):
     activitySection.append(GetDynamicMarkdown(commit))
 
 # Read the README, identify the dynamic part
-lineNumsInActivitySection = []
-with open('README.md', 'r') as file:
+dynamicTextIndex = 0
+staticText = []
+with open('README.md', 'r') as fileReadOnly:
     inActivitySection = False
-    for lineNum, line in enumerate(file):
+    for lineNum, line in enumerate(fileReadOnly):
         if ('<!--activity_section_end-->' in line):
             break
-        if (inActivitySection):
-            lineNumsInActivitySection.append(lineNum)
+        if (not inActivitySection):
+            staticText.append(line)
         if ('<!--activity_section_start-->' in line):
+            staticText.append()
+            dynamicTextIndex = len(staticText)
             inActivitySection = True
-    file.close()
+            
+    fileReadOnly.close()
 
 # Edit the dynamic part of the README      
 activitySectionIndex = 0
-with open('README.md', 'w') as file:
-    for lineNum, line in enumerate(file):
-        if (lineNum not in lineNumsInActivitySection):
-            # Keep the lines that are not in the activity section
-            file.write(line) 
+with open('README.md', 'w') as fileWriteOnly:
+    for i in range(len(staticText)):
+        if (i != dynamicTextIndex):
+            fileWriteOnly.write(staticText[i])
         else:
-            # Write the activity section
-            for activitySectionLine in activitySection:
-                file.write(activitySectionLine) 
-    file.close()
+            for line in activitySection:
+                fileWriteOnly.write(line)
+    fileWriteOnly.close()
