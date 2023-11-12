@@ -71,6 +71,7 @@ with open('README.md', 'r') as file:
             lineNumsInActivitySection.append(lineNum)
         if ('<!--activity_section_start-->' in line):
             inActivitySection = True
+    file.close()
 
 # Edit the dynamic part of the README      
 activitySectionIndex = 0
@@ -83,3 +84,4 @@ with open('README.md', 'w') as file:
             # Write the activity section
             for activitySectionLine in activitySection:
                 file.write(activitySectionLine) 
+    file.close()
