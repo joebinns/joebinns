@@ -64,17 +64,16 @@ for i in range(min(len(allCommits), MAX_ENTRIES)):
 dynamicTextIndex = 0
 staticText = []
 with open('README.md', 'r') as fileReadOnly:
-    inActivitySection = False
+    inDynamicSection = False
     for lineNum, line in enumerate(fileReadOnly):
         if ('<!--activity_section_end-->' in line):
-            inActivitySection = False
-        if (not inActivitySection):
+            inDynamicSection = False
+        if (not inDynamicSection):
             staticText.append(line)
         if ('<!--activity_section_start-->' in line):
             staticText.append()
             dynamicTextIndex = len(staticText)
-            inActivitySection = True
-            
+            inDynamicSection = True     
     fileReadOnly.close()
 
 # Edit the dynamic part of the README      
