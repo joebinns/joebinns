@@ -2,7 +2,7 @@ name: Update README Activity
 run-name: ${{github.actor}} is updating README activity
 on:
   schedule:
-    - cron: "* */1 * * *" # scheduled to run every hour
+    - cron: "*/5 * * * *" # scheduled to run every hour
 jobs:
   update-recent-activity: 
     runs-on: ubuntu-latest
