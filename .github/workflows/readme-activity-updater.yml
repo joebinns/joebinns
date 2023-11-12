@@ -14,7 +14,7 @@ jobs:
           python -m pip install argparse
           python -m pip install requests
           python -m pip install datetime
-          python github-python-test.py ${{secrets.GITHUB_TOKEN}}
+          python readme-activity-automater.py ${{secrets.GITHUB_TOKEN}}
       - name: Commit and Push Changes
         env:
           GITHUB_TOKEN: ${{secrets.GITHUB_TOKEN}}
