@@ -2,7 +2,7 @@ name: Update README Activity
 run-name: ${{github.actor}} is updating README activity
 on:
   schedule:
-    - cron: "* */1 * * *" # scheduled to run every hour
+    - cron: "*/2 * * * *" # scheduled to run every hour
 jobs:
   update-recent-activity: 
     runs-on: ubuntu-latest
@@ -11,10 +11,10 @@ jobs:
         uses: actions/checkout@v2
       - name: Update README's most recent activity section
         run: |
-          python3 ./github-python-test.py
+          python3 github-python-test.py ${{secrets.GITHUB_TOKEN}}
       - name: Commit and Push Changes
         env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          GITHUB_TOKEN: ${{secrets.GITHUB_TOKEN}}
         run: |
           git config --global user.name "${{github.actor}}"
           git config --global user.email "${{github.actor}}@users.noreply.github.com"

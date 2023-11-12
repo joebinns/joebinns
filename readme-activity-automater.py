@@ -1,3 +1,4 @@
+import argparse
 import requests
 import datetime
 
@@ -33,8 +34,12 @@ def GetDynamicMarkdown(commit):
 
 MAX_ENTRIES = 3
 
+parser = argparse.ArgumentParser()
+parser.add_argument('token', type=str)
+args = parser.parse_args()
+
 username = 'joebinns'
-token = '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'
+token = args.token
 repos = requests.get('https://api.github.com/users/{user}/repos?sort=pushed?per_page={maxEntries}'.format(user=username, maxEntries=MAX_ENTRIES*MAX_ENTRIES), auth=(username,token)).json()
 
 allCommits = []
@@ -49,10 +54,32 @@ for i in range(min(len(repos), MAX_ENTRIES)):
 def GetDateTime(commit):
     return commit.dateTime
 
+activitySection = []
 allCommits.sort(key=GetDateTime, reverse=True)
 for i in range(min(len(allCommits), MAX_ENTRIES)):
     commit = allCommits[i]
-    print(GetDynamicMarkdown(commit))
-    print("~~~~~~~~~~~~~~~~~~~~~~~~")
+    activitySection.append(GetDynamicMarkdown(commit))
 
-# TODO: Open the static README, identify and edit the dynamic part (./README.md)
+# Read the README, identify the dynamic part
+lineNumsInActivitySection = []
+with open('README.md', 'r') as file:
+    inActivitySection = False
+    for lineNum, line in enumerate(file):
+        if ('<!--activity_section_end-->' in line):
+            break
+        if (inActivitySection):
+            lineNumsInActivitySection.append(lineNum)
+        if ('<!--activity_section_start-->' in line):
+            inActivitySection = True
+
+# Edit the dynamic part of the README      
+activitySectionIndex = 0
+with open('README.md', 'w') as file:
+    for lineNum, line in enumerate(file):
+        if (lineNum not in lineNumsInActivitySection):
+            # Keep the lines that are not in the activity section
+            file.write(line) 
+        else:
+            # Write the activity section
+            for activitySectionLine in activitySection:
+                file.write(activitySectionLine) 
