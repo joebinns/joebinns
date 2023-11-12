@@ -28,7 +28,7 @@ def GetDynamicMarkdown(commit):
     
     # Format datetime
     dateTimeStr = ''
-    secondsSinceCommit = (datetime.now() - commit.dateTime).total_seconds()
+    secondsSinceCommit = (datetime.datetime.now() - commit.dateTime).total_seconds()
     minutesSinceCommit = secondsSinceCommit / 60
     hoursSinceCommit = minutesSinceCommit / 60
     daysSinceCommit = hoursSinceCommit / 24
