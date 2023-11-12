@@ -77,6 +77,5 @@ with open('README.md', 'r') as fileReadOnly:
 
 # Edit the dynamic part of the README
 with open('README.md', 'w') as fileWriteOnly:
-    for line in text:
-        fileWriteOnly.write(line)
+    fileWriteOnly.writelines(text)
     fileWriteOnly.close()
