@@ -54,35 +54,29 @@ for i in range(min(len(repos), MAX_ENTRIES)):
 def GetDateTime(commit):
     return commit.dateTime
 
-activitySection = []
+dynamicSection = []
 allCommits.sort(key=GetDateTime, reverse=True)
 for i in range(min(len(allCommits), MAX_ENTRIES)):
     commit = allCommits[i]
-    activitySection.append(GetDynamicMarkdown(commit))
+    dynamicSection.append(GetDynamicMarkdown(commit))
 
 # Read the README, identify the dynamic part
-dynamicTextIndex = 0
-staticText = []
+text = []
 with open('README.md', 'r') as fileReadOnly:
     inDynamicSection = False
-    for lineNum, line in enumerate(fileReadOnly):
-        if ('<!--activity_section_end-->' in line):
+    for lineNum, staticLine in enumerate(fileReadOnly):
+        if ('<!--activity_section_end-->' in staticLine):
             inDynamicSection = False
         if (not inDynamicSection):
-            staticText.append(line)
-        if ('<!--activity_section_start-->' in line):
-            staticText.append()
-            dynamicTextIndex = len(staticText)
-            inDynamicSection = True     
+            text.append(staticLine)
+        if ('<!--activity_section_start-->' in staticLine):
+            for dynamicLine in dynamicSection:
+                text.append(dynamicLine)
+            inDynamicSection = True
     fileReadOnly.close()
 
-# Edit the dynamic part of the README      
-activitySectionIndex = 0
+# Edit the dynamic part of the README
 with open('README.md', 'w') as fileWriteOnly:
-    for i in range(len(staticText)):
-        if (i != dynamicTextIndex):
-            fileWriteOnly.write(staticText[i])
-        else:
-            for line in activitySection:
-                fileWriteOnly.write(line)
+    for line in text:
+        fileWriteOnly.write(line)
     fileWriteOnly.close()
