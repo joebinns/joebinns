@@ -30,7 +30,7 @@ def GetDynamicMarkdown(commit):
     ## TODO: If date time was less than 24 hours ago, then use 'x hours ago' instead
     dateTimeStr = commit.dateTime.strftime('%A %b %d at %H:%M GMT')
 
-    return "- [{commitMessage}]({commitUrl}) {preposition} [*{repoFullName}*]({repoUrl}) — {commitDate}".format(commitMessage=commit.message, commitUrl=commit.url, preposition=preposition, repoFullName=commit.repo.fullName, repoUrl=commit.repo.url, commitDate=dateTimeStr)
+    return "- [{commitMessage}]({commitUrl}) {preposition} [*{repoFullName}*]({repoUrl}) — {commitDate}\n".format(commitMessage=commit.message, commitUrl=commit.url, preposition=preposition, repoFullName=commit.repo.fullName, repoUrl=commit.repo.url, commitDate=dateTimeStr)
 
 MAX_ENTRIES = 3
 
