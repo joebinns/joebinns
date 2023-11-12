@@ -27,8 +27,25 @@ def GetDynamicMarkdown(commit):
         preposition = 'from'
     
     # Format datetime
-    ## TODO: If date time was less than 24 hours ago, then use 'x hours ago' instead
-    dateTimeStr = commit.dateTime.strftime('%A %b %d at %H:%M GMT')
+    dateTimeStr = ''
+    secondsSinceCommit = (datetime.now() - commit.dateTime).total_seconds()
+    minutesSinceCommit = secondsSinceCommit / 60
+    hoursSinceCommit = minutesSinceCommit / 60
+    daysSinceCommit = hoursSinceCommit / 24
+    if (hoursSinceCommit < 1):
+        minutes = max(round(minutesSinceCommit), 1)
+        plural = ''
+        if (minutes > 1):
+            plural = 's'
+        dateTimeStr = commit.dateTime.strftime('{minutes} minute{plural} ago'.format(minutes=minutes, plural=plural))
+    if (daysSinceCommit < 1):
+        hours = round(hoursSinceCommit)
+        plural = ''
+        if (hours > 1):
+            plural = 's'
+        dateTimeStr = commit.dateTime.strftime('{hours} hour{plural} ago'.format(hours=hours, plural=plural))
+    else:
+        dateTimeStr = commit.dateTime.strftime('%A, %b %d at %H:%M GMT')
 
     return "- [{commitMessage}]({commitUrl}) {preposition} [*{repoFullName}*]({repoUrl}) — {commitDate}\n".format(commitMessage=commit.message, commitUrl=commit.url, preposition=preposition, repoFullName=commit.repo.fullName, repoUrl=commit.repo.url, commitDate=dateTimeStr)
 
