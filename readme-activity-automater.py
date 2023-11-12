@@ -67,7 +67,7 @@ with open('README.md', 'r') as fileReadOnly:
     inActivitySection = False
     for lineNum, line in enumerate(fileReadOnly):
         if ('<!--activity_section_end-->' in line):
-            break
+            inActivitySection = False
         if (not inActivitySection):
             staticText.append(line)
         if ('<!--activity_section_start-->' in line):
