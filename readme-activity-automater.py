@@ -4,7 +4,7 @@ import datetime
 
 class RepoInfo:
     def __init__(self, repo):
-        self.fullName = repo['full_name']
+        self.name = repo['name']
         self.url = repo['html_url']
 
 class CommitInfo:
@@ -47,7 +47,7 @@ def GetDynamicMarkdown(commit):
     else:
         dateTimeStr = commit.dateTime.strftime('%A, %b %d at %H:%M GMT')
 
-    return "- [{commitMessage}]({commitUrl}) {preposition} [*{repoFullName}*]({repoUrl}) — {commitDate}\n".format(commitMessage=commit.message, commitUrl=commit.url, preposition=preposition, repoFullName=commit.repo.fullName, repoUrl=commit.repo.url, commitDate=dateTimeStr)
+    return "- [{commitMessage}]({commitUrl}) {preposition} [*{repoName}*]({repoUrl}) — {commitDate}\n".format(commitMessage=commit.message, commitUrl=commit.url, preposition=preposition, repoName=commit.repo.name, repoUrl=commit.repo.url, commitDate=dateTimeStr)
 
 MAX_ENTRIES = 3
 
@@ -62,7 +62,7 @@ repos = requests.get('https://api.github.com/users/{user}/repos?sort=pushed?per_
 allCommits = []
 for i in range(min(len(repos), MAX_ENTRIES)):
     repo = RepoInfo(repos[i])
-    commits = requests.get('https://api.github.com/repos/{repoFullName}/commits?per_page={maxEntries}'.format(user=username, repoFullName=repo.fullName, maxEntries=MAX_ENTRIES), auth=(username,token)).json()
+    commits = requests.get('https://api.github.com/repos/{user}/{repoName}/commits?per_page={maxEntries}'.format(user=username, repoName=repo.name, maxEntries=MAX_ENTRIES), auth=(username,token)).json()
 
     for j in range(min(len(commits), MAX_ENTRIES)):
         commit = CommitInfo(commits[j], repo)
