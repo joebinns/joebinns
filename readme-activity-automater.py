@@ -39,7 +39,7 @@ def GetDynamicMarkdown(commit):
             plural = 's'
         dateTimeStr = commit.dateTime.strftime('{minutes} minute{plural} ago'.format(minutes=minutes, plural=plural))
     if (daysSinceCommit < 1):
-        hours = round(hoursSinceCommit)
+        hours = min(round(hoursSinceCommit), 23)
         plural = ''
         if (hours > 1):
             plural = 's'
