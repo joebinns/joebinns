@@ -5,7 +5,7 @@
 - [Update README.md](https://github.com/joebinns/data-oriented-space-invaders/commit/9576488f409c0e7fbeaeed5e0626365a48bba497) in [*joebinns/data-oriented-space-invaders*](https://github.com/joebinns/data-oriented-space-invaders) — Saturday Nov 11 at 14:04 GMT
 - [Add shooting at detector actor to disable detector](https://github.com/joebinns/gameplay-mathematics/commit/c7a4a86b397e6415b033c2772b367f533a389106) to [*joebinns/gameplay-mathematics*](https://github.com/joebinns/gameplay-mathematics) — Saturday Nov 11 at 13:59 GMT
 <!--activity_section_end-->
->🚀 *This content is being auto-generated using Python and GitHub Actions.*
-<br>
-Interested in anything you see? **Reach out**!<br>
+> 🚀 I'm auto-generating this content using Python and GitHub Actions.
+
+<br>Interested in anything you see? **Reach out**!<br>
 Recruiting? Visit [my website](https://joebinns.com/) to view my **portfolio**, **curriculum vitae** and more.
