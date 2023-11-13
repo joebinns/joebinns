@@ -32,20 +32,45 @@ def GetDynamicMarkdown(commit):
     minutesSinceCommit = secondsSinceCommit / 60
     hoursSinceCommit = minutesSinceCommit / 60
     daysSinceCommit = hoursSinceCommit / 24
+    weeksSinceCommit = daysSinceCommit / 7
+    monthsSinceCommit = weeksSinceCommit / 4
+    yearsSinceCommit = monthsSinceCommit / 12
     if (hoursSinceCommit < 1):
         minutes = max(round(minutesSinceCommit), 1)
         plural = ''
         if (minutes > 1):
             plural = 's'
         dateTimeStr = commit.dateTime.strftime('{minutes} minute{plural} ago'.format(minutes=minutes, plural=plural))
-    if (daysSinceCommit < 1):
+    elif (daysSinceCommit < 1):
         hours = min(round(hoursSinceCommit), 23)
         plural = ''
         if (hours > 1):
             plural = 's'
         dateTimeStr = commit.dateTime.strftime('{hours} hour{plural} ago'.format(hours=hours, plural=plural))
+    elif (weeksSinceCommit < 1):
+        days = round(daysSinceCommit)
+        if (days == 1):
+            dateTimeStr = 'yesterday'
+        else:
+            dateTimeStr = commit.dateTime.strftime('{days} days ago'.format(days=days))
+    elif (monthsSinceCommit < 1):
+        weeks = round(weeksSinceCommit)
+        if (weeks == 1):
+            dateTimeStr = 'last week'
+        else:
+            dateTimeStr = commit.dateTime.strftime('{days} weeks ago'.format(days=days))
+    elif (yearsSinceCommit < 1):
+        months = round(monthsSinceCommit)
+        if (months == 1):
+            dateTimeStr = 'last month'
+        else:
+            dateTimeStr = commit.dateTime.strftime('{months} months ago'.format(months=months))
     else:
-        dateTimeStr = commit.dateTime.strftime('%A, %b %d at %H:%M GMT')
+        years = round(yearsSinceCommit)
+        if (years == 1):
+            dateTimeStr = 'last year'
+        else:
+            dateTimeStr = commit.dateTime.strftime('{years} years ago'.format(years=years))
 
     return "- [{commitMessage}]({commitUrl}) {preposition} [*{repoName}*]({repoUrl}) — {commitDate}\n".format(commitMessage=commit.message, commitUrl=commit.url, preposition=preposition, repoName=commit.repo.name, repoUrl=commit.repo.url, commitDate=dateTimeStr)
 
