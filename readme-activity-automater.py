@@ -35,31 +35,31 @@ def GetDynamicMarkdown(commit):
     weeksSinceCommit = daysSinceCommit / 7
     monthsSinceCommit = weeksSinceCommit / 4
     yearsSinceCommit = monthsSinceCommit / 12
-    if (hoursSinceCommit < 1):
+    if (minutesSinceCommit <= 59.5):
         minutes = max(round(minutesSinceCommit), 1)
         plural = ''
         if (minutes > 1):
             plural = 's'
         dateTimeStr = commit.dateTime.strftime('{minutes} minute{plural} ago'.format(minutes=minutes, plural=plural))
-    elif (daysSinceCommit < 1):
-        hours = min(round(hoursSinceCommit), 23)
+    elif (hoursSinceCommit <= 23.5):
+        hours = round(hoursSinceCommit)
         plural = ''
         if (hours > 1):
             plural = 's'
         dateTimeStr = commit.dateTime.strftime('{hours} hour{plural} ago'.format(hours=hours, plural=plural))
-    elif (weeksSinceCommit < 1):
+    elif (daysSinceCommit <= 6.5):
         days = round(daysSinceCommit)
         if (days == 1):
             dateTimeStr = 'yesterday'
         else:
             dateTimeStr = commit.dateTime.strftime('{days} days ago'.format(days=days))
-    elif (monthsSinceCommit < 1):
+    elif (weeksSinceCommit <= 3.5):
         weeks = round(weeksSinceCommit)
         if (weeks == 1):
             dateTimeStr = 'last week'
         else:
             dateTimeStr = commit.dateTime.strftime('{days} weeks ago'.format(days=days))
-    elif (yearsSinceCommit < 1):
+    elif (monthsSinceCommit <= 11.5):
         months = round(monthsSinceCommit)
         if (months == 1):
             dateTimeStr = 'last month'
