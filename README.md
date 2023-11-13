@@ -1,5 +1,5 @@
 # Hello, I'm Joe.
-**Here's the most recent activity in my repositories:**<br>
+**Here's the most recent activity in my public repositories:**<br>
 <!--activity_section_start-->
 - [Remove excessive break](https://github.com/joebinns/gameplay-mathematics/commit/0e031e9dc1414bbdf6c8669f10b15f0e8b1d4344) from [*gameplay-mathematics*](https://github.com/joebinns/gameplay-mathematics) — 23 hours ago
 - [Add README.md, including first 3 assignments](https://github.com/joebinns/gameplay-mathematics/commit/4a61cabc63aa3f4795643c537f1edcac479dcefc) to [*gameplay-mathematics*](https://github.com/joebinns/gameplay-mathematics) — Saturday, Nov 11 at 14:24 GMT
