@@ -17,7 +17,7 @@ class CommitInfo:
 
 def GetDynamicMarkdown(commit):
     # Format commit message
-    # TODO: Strip new lines from commit message (and remove anything after them)
+    commitMessage = commit.message.splitlines()[0]
 
     # Set preposition based on commit message
     preposition = 'in'
@@ -72,7 +72,7 @@ def GetDynamicMarkdown(commit):
         else:
             dateTimeStr = commit.dateTime.strftime('{years} years ago'.format(years=years))
 
-    return "- [{commitMessage}]({commitUrl}) {preposition} [*{repoName}*]({repoUrl}) — {commitDate}\n".format(commitMessage=commit.message, commitUrl=commit.url, preposition=preposition, repoName=commit.repo.name, repoUrl=commit.repo.url, commitDate=dateTimeStr)
+    return "- [{commitMessage}]({commitUrl}) {preposition} [*{repoName}*]({repoUrl}) — {commitDate}\n".format(commitMessage=commitMessage, commitUrl=commit.url, preposition=preposition, repoName=commit.repo.name, repoUrl=commit.repo.url, commitDate=dateTimeStr)
 
 MAX_ENTRIES = 3
 
