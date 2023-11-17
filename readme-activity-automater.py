@@ -21,9 +21,9 @@ def GetDynamicMarkdown(commit):
 
     # Set preposition based on commit message
     preposition = 'in'
-    if ('add' in commit.message.lower()):
+    if ('add' in commitMessage.lower()):
         preposition = 'to'
-    elif ('remove' in commit.message.lower()):
+    elif ('remove' in commitMessage.lower()):
         preposition = 'from'
     
     # Format datetime
