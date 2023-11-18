@@ -15,8 +15,13 @@ jobs:
           python -m pip install requests
           python -m pip install datetime
           python readme-activity-automater.py ${{secrets.GITHUB_TOKEN}}
+      - name: Check if there are any changes
+        id: verify_diff
+        run: |
+          git diff --quiet . || echo "changed=true" >> $GITHUB_OUTPUT
       - name: Commit and Push Changes
-        env:
+        if: steps.verify_diff.outputs.changed == 'true'
+        env: 
           GITHUB_TOKEN: ${{secrets.GITHUB_TOKEN}}
         run: |
           git config --global user.name "${{github.actor}}"
