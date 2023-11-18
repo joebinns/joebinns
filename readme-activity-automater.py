@@ -26,6 +26,9 @@ def GetDynamicMarkdown(commit):
     elif ('remove' in commitMessage.lower()):
         preposition = 'from'
     
+    if ('to' in commitMessage.lower()):
+        preposition = 'in'
+    
     # Format datetime
     dateTimeStr = ''
     secondsSinceCommit = (datetime.datetime.now() - commit.dateTime).total_seconds()
