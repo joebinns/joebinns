@@ -61,7 +61,7 @@ def GetDynamicMarkdown(commit):
         if (weeks == 1):
             dateTimeStr = 'last week'
         else:
-            dateTimeStr = commit.dateTime.strftime('{days} weeks ago'.format(days=days))
+            dateTimeStr = commit.dateTime.strftime('{weeks} weeks ago'.format(weeks=weeks))
     elif (monthsSinceCommit <= 11.5):
         months = round(monthsSinceCommit)
         if (months == 1):
