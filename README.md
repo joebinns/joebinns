@@ -1,9 +1,9 @@
 # Hello, I'm Joe.
 Here are the most recent commits from my public repositories:<br>
 <!--activity_section_start-->
-- [Fix spelling mistake](https://github.com/joebinns/gameplay-mathematics/commit/ff9895b83ed8facdffb3c6ebf890bc9fc632c1eb) in [*gameplay-mathematics*](https://github.com/joebinns/gameplay-mathematics) — yesterday
-- [Merge branch 'heads/jobs-optimisation'](https://github.com/joebinns/data-oriented-space-invaders/commit/0fff08537181e95476b3fd11441f2708004859b9) in [*data-oriented-space-invaders*](https://github.com/joebinns/data-oriented-space-invaders) — last month
-- [Revert "Increase number of enemies"](https://github.com/joebinns/data-oriented-space-invaders/commit/b20cf13335cb68944e988a95e7c0d08c636da87a) in [*data-oriented-space-invaders*](https://github.com/joebinns/data-oriented-space-invaders) — last month
+- [Add gameplay gif](https://github.com/joebinns/gameplay-mathematics/commit/27b328a0ca4f3041b47130a0dd77c16af4f5e8f9) to [*gameplay-mathematics*](https://github.com/joebinns/gameplay-mathematics) — 1 minute ago
+- [Add gif](https://github.com/joebinns/gameplay-mathematics/commit/6d035ae5244ca56b09aa5b13759e3f903297e624) to [*gameplay-mathematics*](https://github.com/joebinns/gameplay-mathematics) — 5 minutes ago
+- [Fix crosshair linetrace by making detector actor query only](https://github.com/joebinns/gameplay-mathematics/commit/9b6f1ea853ff5c781f3e1075c0e24ced0dd8c22f) in [*gameplay-mathematics*](https://github.com/joebinns/gameplay-mathematics) — 12 minutes ago
 <!--activity_section_end-->
 > 🚀 I've automated this content using Python  and GitHub Actions.
 
