@@ -1,9 +1,9 @@
 # Hello, I'm Joe.
 Here are the most recent commits from my public repositories:<br>
 <!--activity_section_start-->
-- [Add gameplay gif](https://github.com/joebinns/gameplay-mathematics/commit/27b328a0ca4f3041b47130a0dd77c16af4f5e8f9) to [*gameplay-mathematics*](https://github.com/joebinns/gameplay-mathematics) — 3 months ago
-- [Add gif](https://github.com/joebinns/gameplay-mathematics/commit/6d035ae5244ca56b09aa5b13759e3f903297e624) to [*gameplay-mathematics*](https://github.com/joebinns/gameplay-mathematics) — 3 months ago
-- [Fix crosshair linetrace by making detector actor query only](https://github.com/joebinns/gameplay-mathematics/commit/9b6f1ea853ff5c781f3e1075c0e24ced0dd8c22f) in [*gameplay-mathematics*](https://github.com/joebinns/gameplay-mathematics) — 3 months ago
+- [Avoid destroying networked game objects on the client](https://github.com/joebinns/network-programming-assignments/commit/4421d3e29d9f790d44770d684ae35aa8d9f3ba3a) in [*network-programming-assignments*](https://github.com/joebinns/network-programming-assignments) — last week
+- [Replace faulty network instantiation with networked position](https://github.com/joebinns/network-programming-assignments/commit/47308b43f81edef9b7e582977bc08948147b6d9d) in [*network-programming-assignments*](https://github.com/joebinns/network-programming-assignments) — last week
+- [Format standard mine](https://github.com/joebinns/network-programming-assignments/commit/534c25d52cadcd5f386c7ffab04708f0a770de0b) in [*network-programming-assignments*](https://github.com/joebinns/network-programming-assignments) — last week
 <!--activity_section_end-->
 > 🚀 I've automated this content using Python  and GitHub Actions.
 
