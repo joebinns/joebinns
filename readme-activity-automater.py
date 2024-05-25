@@ -13,6 +13,7 @@ class CommitInfo:
         self.url = commit['html_url']
         self.message = commit['commit']['message']
         self.author = commit['commit']['author']['name']
+        self.email = commit['commit']['author']['email']
         self.dateTime = datetime.datetime.strptime(commit['commit']['author']['date'], "%Y-%m-%dT%H:%M:%SZ") # Convert ISO8601 string to datetime
 
 def GetDynamicMarkdown(commit):
@@ -91,10 +92,13 @@ repos = requests.get('https://api.github.com/users/{user}/repos'.format(user=use
 allCommits = []
 for i in range(min(len(repos), MAX_ENTRIES)):
     repo = RepoInfo(repos[i])
-    commits = requests.get('https://api.github.com/repos/{user}/{repoName}/commits?per_page={maxEntries}'.format(user=username, repoName=repo.name, maxEntries=MAX_ENTRIES), auth=(username, token)).json()
+    payload = {'sort': 'pushed', 'direction': 'desc', 'per_page': MAX_ENTRIES}
+    commits = requests.get('https://api.github.com/repos/{user}/{repoName}/commits'.format(user=username, repoName=repo.name), params=payload, auth=(username, token)).json()
 
     for j in range(min(len(commits), MAX_ENTRIES)):
         commit = CommitInfo(commits[j], repo)
+        if (commit.email == '{user}@users.noreply.github.com'.format(user=username)): 
+            continue
         allCommits.append(commit)
     
 def GetDateTime(commit):
