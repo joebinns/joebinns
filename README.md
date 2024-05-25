@@ -1,9 +1,9 @@
 # Hello, I'm Joe.
 Here are the most recent commits from my public repositories:<br>
 <!--activity_section_start-->
-- [Avoid destroying networked game objects on the client](https://github.com/joebinns/network-programming-assignments/commit/4421d3e29d9f790d44770d684ae35aa8d9f3ba3a) in [*network-programming-assignments*](https://github.com/joebinns/network-programming-assignments) — 3 months ago
-- [Replace faulty network instantiation with networked position](https://github.com/joebinns/network-programming-assignments/commit/47308b43f81edef9b7e582977bc08948147b6d9d) in [*network-programming-assignments*](https://github.com/joebinns/network-programming-assignments) — 3 months ago
-- [Format standard mine](https://github.com/joebinns/network-programming-assignments/commit/534c25d52cadcd5f386c7ffab04708f0a770de0b) in [*network-programming-assignments*](https://github.com/joebinns/network-programming-assignments) — 3 months ago
+- [Fix readme activity automator URL parameter parsing](https://github.com/joebinns/joebinns/commit/9a5fc4c055a45bee36dbe7a077dfd779c04f2224) in [*joebinns*](https://github.com/joebinns/joebinns) — 30 minutes ago
+- [Tweak font sizes for vertical viewing](https://github.com/joebinns/joebinns.github.io/commit/50edb8c79edde45b63a10bf2b68341dc723cb7b9) in [*joebinns.github.io*](https://github.com/joebinns/joebinns.github.io) — 3 hours ago
+- [Fix vertical screen logo scaling](https://github.com/joebinns/joebinns.github.io/commit/37307c8998b9adb535558950abd997a10a2a95b7) in [*joebinns.github.io*](https://github.com/joebinns/joebinns.github.io) — 3 hours ago
 <!--activity_section_end-->
 > 🚀 I've automated this content using Python  and GitHub Actions.
 
