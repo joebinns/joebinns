@@ -85,12 +85,13 @@ args = parser.parse_args()
 
 username = 'joebinns'
 token = args.token
-repos = requests.get('https://api.github.com/users/{user}/repos?sort=pushed?per_page={maxEntries}'.format(user=username, maxEntries=MAX_ENTRIES*MAX_ENTRIES), auth=(username,token)).json()
+payload = {'type': 'public', 'sort': 'pushed', 'direction': 'desc', 'per_page': MAX_ENTRIES}
+repos = requests.get('https://api.github.com/users/{user}/repos'.format(user=username), params=payload, auth=(username, token)).json()
 
 allCommits = []
 for i in range(min(len(repos), MAX_ENTRIES)):
     repo = RepoInfo(repos[i])
-    commits = requests.get('https://api.github.com/repos/{user}/{repoName}/commits?per_page={maxEntries}'.format(user=username, repoName=repo.name, maxEntries=MAX_ENTRIES), auth=(username,token)).json()
+    commits = requests.get('https://api.github.com/repos/{user}/{repoName}/commits?per_page={maxEntries}'.format(user=username, repoName=repo.name, maxEntries=MAX_ENTRIES), auth=(username, token)).json()
 
     for j in range(min(len(commits), MAX_ENTRIES)):
         commit = CommitInfo(commits[j], repo)
