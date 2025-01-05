@@ -1,9 +1,9 @@
 # Hello, I'm Joe.
 Here are the most recent commits from my public repositories:<br>
 <!--activity_section_start-->
-- [Tweak logo style](https://github.com/joebinns/joebinns.github.io/commit/7a6150d5955f5fbe887b13b9df3bb9e70dd66668) in [*joebinns.github.io*](https://github.com/joebinns/joebinns.github.io) — 11 minutes ago
-- [Fix light mode and dark mode for IntensityBasedCircleGridShader](https://github.com/joebinns/joebinns.github.io/commit/4c58a939f68e2a0e70517722cd1d4836103c4822) in [*joebinns.github.io*](https://github.com/joebinns/joebinns.github.io) — 20 minutes ago
-- [Tweak portfolio pieces styling](https://github.com/joebinns/joebinns.github.io/commit/632a7af0b825ca6147a7c23efc334382551e8d4d) in [*joebinns.github.io*](https://github.com/joebinns/joebinns.github.io) — 51 minutes ago
+- [Increase letter spacing](https://github.com/joebinns/joebinns.github.io/commit/b14d1a9a3ebfe87f8f54e40e504805ff53b2d167) in [*joebinns.github.io*](https://github.com/joebinns/joebinns.github.io) — 13 minutes ago
+- [Use non-bold portfolio titles](https://github.com/joebinns/joebinns.github.io/commit/0c2c766711c6c4f19a6130e6038b5ef1da6622b2) in [*joebinns.github.io*](https://github.com/joebinns/joebinns.github.io) — 23 minutes ago
+- [Soften the back arrow corners](https://github.com/joebinns/joebinns.github.io/commit/cc4ac9f71b9813a17cf9b529d90972f5fde6db31) in [*joebinns.github.io*](https://github.com/joebinns/joebinns.github.io) — 43 minutes ago
 <!--activity_section_end-->
 > 🚀 I've automated this content using Python  and GitHub Actions.
 
