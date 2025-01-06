@@ -1,9 +1,9 @@
 # Hello, I'm Joe.
 Here are the most recent commits from my public repositories:<br>
 <!--activity_section_start-->
-- [Fix inconsistency in light and dark mode due to Bloom](https://github.com/joebinns/joebinns.github.io/commit/3f271f504b1e2e6fb52094badd08b763075db633) in [*joebinns.github.io*](https://github.com/joebinns/joebinns.github.io) — 2 hours ago
-- [Use intensity squared](https://github.com/joebinns/joebinns.github.io/commit/9550f0334975c6297711a53f5b2e3ed2e450dcbd) in [*joebinns.github.io*](https://github.com/joebinns/joebinns.github.io) — 9 hours ago
-- [Add bloom pass post processing](https://github.com/joebinns/joebinns.github.io/commit/bfb466ed0fdabd0fc9dbea342557dd55a412c316) to [*joebinns.github.io*](https://github.com/joebinns/joebinns.github.io) — 9 hours ago
+- [Top align models](https://github.com/joebinns/joebinns.github.io/commit/03ee68cd3f221f2442dc5a2f58300f3c647f571d) in [*joebinns.github.io*](https://github.com/joebinns/joebinns.github.io) — 19 minutes ago
+- [Tweak model previewer styling](https://github.com/joebinns/joebinns.github.io/commit/3194620de0fc704cfc97fa1c258c9b8cbd504176) in [*joebinns.github.io*](https://github.com/joebinns/joebinns.github.io) — 19 minutes ago
+- [Fix inconsistency in light and dark mode due to Bloom](https://github.com/joebinns/joebinns.github.io/commit/3f271f504b1e2e6fb52094badd08b763075db633) in [*joebinns.github.io*](https://github.com/joebinns/joebinns.github.io) — 3 hours ago
 <!--activity_section_end-->
 > 🚀 I've automated this content using Python  and GitHub Actions.
 
