@@ -1,9 +1,9 @@
 # Hello, I'm Joe.
 Here are the most recent commits from my public repositories:<br>
 <!--activity_section_start-->
-- [Fix silly woopsies](https://github.com/joebinns/oscillators/commit/103bbd1ebe788a55eff563b214b039fc289a301e) in [*oscillators*](https://github.com/joebinns/oscillators) — 2 months ago
-- [Don't var a parameter](https://github.com/joebinns/oscillators/commit/49dbccf5903c8521961e9cf0ea4e71747fe44178) in [*oscillators*](https://github.com/joebinns/oscillators) — 2 months ago
-- [Fix missing semi-colon](https://github.com/joebinns/oscillators/commit/b3a5b4e85264935c6a9eafe42b915eab6c97c435) in [*oscillators*](https://github.com/joebinns/oscillators) — 2 months ago
+- [Reduce the torque around the x axis](https://github.com/joebinns/joebinns.github.io/commit/b815e7ae8a1f3bc5e41b2e6cbef4bfa2fab0aead) in [*joebinns.github.io*](https://github.com/joebinns/joebinns.github.io) — 7 minutes ago
+- [Fix Little Cosmos model references](https://github.com/joebinns/joebinns.github.io/commit/d2e3d934230b487f76ac00d1fe3196cf4b6d1ad3) in [*joebinns.github.io*](https://github.com/joebinns/joebinns.github.io) — 9 minutes ago
+- [Change sentence in Little Cosmos](https://github.com/joebinns/joebinns.github.io/commit/cc047875a5b76527fba6220c84b4585cbafce6ff) in [*joebinns.github.io*](https://github.com/joebinns/joebinns.github.io) — 16 minutes ago
 <!--activity_section_end-->
 > 🚀 I've automated this content using Python  and GitHub Actions.
 
