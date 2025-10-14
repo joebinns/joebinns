@@ -1,9 +1,9 @@
 # Hello, I'm Joe.
 Here are the most recent commits from my public repositories:<br>
 <!--activity_section_start-->
-- [Update CV](https://github.com/joebinns/joebinns.github.io/commit/22703b93b0b29200c947a33ca898a441693e78dd) in [*joebinns.github.io*](https://github.com/joebinns/joebinns.github.io) — last month
-- [Update CV](https://github.com/joebinns/joebinns.github.io/commit/b2b44e17a00430e613e029c4fa4b5662cc451393) in [*joebinns.github.io*](https://github.com/joebinns/joebinns.github.io) — last month
-- [OAuth: Allow non-loopback addresses (#1514)](https://github.com/joebinns/librespot/commit/03bcdc6bda5f7e2a6c21c3a1576ef00b21ca469c) to [*librespot*](https://github.com/joebinns/librespot) — 2 months ago
+- [Add release date to Crossings](https://github.com/joebinns/joebinns.github.io/commit/694dd39213ac140dec01cd5179be04f3c63320d9) in [*joebinns.github.io*](https://github.com/joebinns/joebinns.github.io) — 6 minutes ago
+- [Updatae Crossings dates](https://github.com/joebinns/joebinns.github.io/commit/451e4e400f44e862ec7b208f1f3c9ad907ca65da) in [*joebinns.github.io*](https://github.com/joebinns/joebinns.github.io) — 8 minutes ago
+- [Update Crossings trailer](https://github.com/joebinns/joebinns.github.io/commit/bcaf971f1cb5ea9031d13415e42cf4e591cf09e2) in [*joebinns.github.io*](https://github.com/joebinns/joebinns.github.io) — 10 minutes ago
 <!--activity_section_end-->
 > 🚀 I've automated this content using Python  and GitHub Actions.
 
