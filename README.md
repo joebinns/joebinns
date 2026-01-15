@@ -1,9 +1,9 @@
 # Hello, I'm Joe.
 Here are the most recent commits from my public repositories:<br>
 <!--activity_section_start-->
-- [Attempt at auto-opening details section if hash is provided in the URL](https://github.com/joebinns/joebinns.github.io/commit/11d9bf2881aded56743b6aa30da8414608c700f4) in [*joebinns.github.io*](https://github.com/joebinns/joebinns.github.io) — 5 minutes ago
-- [Add ribbon to all pages](https://github.com/joebinns/joebinns.github.io/commit/8633fe1200473bf179cfa55660fe5bbfeb39c386) in [*joebinns.github.io*](https://github.com/joebinns/joebinns.github.io) — 1 hour ago
-- [Render ribbon infront](https://github.com/joebinns/joebinns.github.io/commit/dcb4d99f7dea9f8362e37df59d66fc4239340e31) in [*joebinns.github.io*](https://github.com/joebinns/joebinns.github.io) — 1 hour ago
+- [Add a tagline](https://github.com/joebinns/joebinns.github.io/commit/735eba8a874afc213cde310ac7bd46bce24c9e53) to [*joebinns.github.io*](https://github.com/joebinns/joebinns.github.io) — 57 minutes ago
+- [Correct punctuation](https://github.com/joebinns/joebinns.github.io/commit/b3966a4a2b06aa1f3c13e69e084b0d10335395cb) in [*joebinns.github.io*](https://github.com/joebinns/joebinns.github.io) — 1 hour ago
+- [Move ID to details...](https://github.com/joebinns/joebinns.github.io/commit/89e203f23f53c2a7186c41ae584406edced9577e) in [*joebinns.github.io*](https://github.com/joebinns/joebinns.github.io) — 1 hour ago
 <!--activity_section_end-->
 > 🚀 I've automated this content using Python  and GitHub Actions.
 
