@@ -1,9 +1,9 @@
 # Hello, I'm Joe.
 Here are the most recent commits from my public repositories:<br>
 <!--activity_section_start-->
-- [Add WiP project train page](https://github.com/joebinns/joebinns.github.io/commit/28e158cbba78bd788cb204c2c1782b3cdda54b97) to [*joebinns.github.io*](https://github.com/joebinns/joebinns.github.io) — yesterday
-- [Add WiP project train to landing page](https://github.com/joebinns/joebinns.github.io/commit/7c167f308f0c394b91b08ca55410e674884d9b3d) in [*joebinns.github.io*](https://github.com/joebinns/joebinns.github.io) — 2 days ago
-- [Static ribbon](https://github.com/joebinns/joebinns.github.io/commit/34fe7bd5a113bd743dd3e1e60fe5134696ae9e7d) in [*joebinns.github.io*](https://github.com/joebinns/joebinns.github.io) — 2 days ago
+- [Update WiP text](https://github.com/joebinns/joebinns.github.io/commit/8697950a6cfc48ae76cbc410a9a794ff92765995) in [*joebinns.github.io*](https://github.com/joebinns/joebinns.github.io) — 7 minutes ago
+- [Fix next project link on projectTrain page](https://github.com/joebinns/joebinns.github.io/commit/0677246a1a9251a71dc4878bd42e466ba199a907) in [*joebinns.github.io*](https://github.com/joebinns/joebinns.github.io) — 10 minutes ago
+- [Reference project train page instead of WiP page](https://github.com/joebinns/joebinns.github.io/commit/f98597df25c4461613567e3512f87ef2289beb28) in [*joebinns.github.io*](https://github.com/joebinns/joebinns.github.io) — 18 minutes ago
 <!--activity_section_end-->
 > 🚀 I've automated this content using Python  and GitHub Actions.
 
