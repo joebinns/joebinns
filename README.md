@@ -1,9 +1,9 @@
 # Hello, I'm Joe.
 Here are the most recent commits from my public repositories:<br>
 <!--activity_section_start-->
-- [Update WiP text](https://github.com/joebinns/joebinns.github.io/commit/8697950a6cfc48ae76cbc410a9a794ff92765995) in [*joebinns.github.io*](https://github.com/joebinns/joebinns.github.io) — 6 days ago
-- [Fix next project link on projectTrain page](https://github.com/joebinns/joebinns.github.io/commit/0677246a1a9251a71dc4878bd42e466ba199a907) in [*joebinns.github.io*](https://github.com/joebinns/joebinns.github.io) — 6 days ago
-- [Reference project train page instead of WiP page](https://github.com/joebinns/joebinns.github.io/commit/f98597df25c4461613567e3512f87ef2289beb28) in [*joebinns.github.io*](https://github.com/joebinns/joebinns.github.io) — 6 days ago
+- [Remove line breaks](https://github.com/joebinns/joebinns.github.io/commit/f8580baad51ab67a9685542bf8a71496aa1610a0) from [*joebinns.github.io*](https://github.com/joebinns/joebinns.github.io) — 29 minutes ago
+- [Add all the paragraphs to Crossings](https://github.com/joebinns/joebinns.github.io/commit/a16f9531e4cded5f9b2b7cb2c5637bd30cbec1d3) in [*joebinns.github.io*](https://github.com/joebinns/joebinns.github.io) — 31 minutes ago
+- [Remove a section from Garden of the Sea](https://github.com/joebinns/joebinns.github.io/commit/1d83c6d1ae8d218157eb4f72c3a8e35006db86e9) from [*joebinns.github.io*](https://github.com/joebinns/joebinns.github.io) — 5 days ago
 <!--activity_section_end-->
 > 🚀 I've automated this content using Python  and GitHub Actions.
 
