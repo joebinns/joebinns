@@ -1,9 +1,9 @@
 # Hello, I'm Joe.
 Here are the most recent commits from my public repositories:<br>
 <!--activity_section_start-->
-- [Add inertia and combat videos](https://github.com/joebinns/joebinns.github.io/commit/f33f867274c80e6a4b69ba0801187b0698ceab91) to [*joebinns.github.io*](https://github.com/joebinns/joebinns.github.io) — 11 minutes ago
-- [Use the correct vrchery video](https://github.com/joebinns/joebinns.github.io/commit/d7e77c4fefe3b8227b15c35ee8fab547d702cdd7) in [*joebinns.github.io*](https://github.com/joebinns/joebinns.github.io) — 47 minutes ago
-- [Add gestures video](https://github.com/joebinns/joebinns.github.io/commit/8bba62d4eadceb45b575beca83a8a690bd65fc3d) to [*joebinns.github.io*](https://github.com/joebinns/joebinns.github.io) — 48 minutes ago
+- [Add status-effects video and update vrchery video](https://github.com/joebinns/joebinns.github.io/commit/8ef3153449f44c2736d8d1e5971ed7b11de4c02f) to [*joebinns.github.io*](https://github.com/joebinns/joebinns.github.io) — 2 minutes ago
+- [Add clearing video](https://github.com/joebinns/joebinns.github.io/commit/a615a21947c6014511c75a412553a2f754bdc0cc) to [*joebinns.github.io*](https://github.com/joebinns/joebinns.github.io) — 59 minutes ago
+- [Add lantern video](https://github.com/joebinns/joebinns.github.io/commit/e3e6cbc00bf8c195c13e784dbce58d0bf68cddc8) to [*joebinns.github.io*](https://github.com/joebinns/joebinns.github.io) — 1 hour ago
 <!--activity_section_end-->
 > 🚀 I've automated this content using Python  and GitHub Actions.
 
