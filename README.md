@@ -1,9 +1,9 @@
 # Hello, I'm Joe.
 Here are the most recent commits from my public repositories:<br>
 <!--activity_section_start-->
-- [Revert "Add demo text to project trainslop video"](https://github.com/joebinns/joebinns.github.io/commit/1312c6a1d98757ec141ab3f4f84ecd9d7c08f856) in [*joebinns.github.io*](https://github.com/joebinns/joebinns.github.io) — yesterday
-- [Add demo text to project trainslop video](https://github.com/joebinns/joebinns.github.io/commit/a292ba4e06db662fc9284e1ff24d0c13831d6026) in [*joebinns.github.io*](https://github.com/joebinns/joebinns.github.io) — 3 days ago
-- [Add trainslop video to main page](https://github.com/joebinns/joebinns.github.io/commit/abf3af418ae6150393e9f9cfff37a5084b973652) in [*joebinns.github.io*](https://github.com/joebinns/joebinns.github.io) — 3 days ago
+- [Hide lantern video](https://github.com/joebinns/joebinns.github.io/commit/e728c086be3775b1005ee6f89990a91a6e45572a) in [*joebinns.github.io*](https://github.com/joebinns/joebinns.github.io) — 38 minutes ago
+- [Remove controls (and therefore audio) from all videos on Crossings](https://github.com/joebinns/joebinns.github.io/commit/6ad878c7bcd8fbcb6c45842ebff493cbcbc98e6f) from [*joebinns.github.io*](https://github.com/joebinns/joebinns.github.io) — 44 minutes ago
+- [Polish Crossings text](https://github.com/joebinns/joebinns.github.io/commit/a340ab7667b1ef140ac98d7d58c132c5de00a280) in [*joebinns.github.io*](https://github.com/joebinns/joebinns.github.io) — 48 minutes ago
 <!--activity_section_end-->
 > 🚀 I've automated this content using Python  and GitHub Actions.
 
