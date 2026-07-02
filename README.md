@@ -1,9 +1,9 @@
 # Hello, I'm Joe.
 Here are the most recent commits from my public repositories:<br>
 <!--activity_section_start-->
-- [Rename Project Trainslop to TonKaTon](https://github.com/joebinns/joebinns.github.io/commit/8cfec1c211ae34010b41820fc58b16f7ef2b44c2) in [*joebinns.github.io*](https://github.com/joebinns/joebinns.github.io) — 2 weeks ago
-- [Comment out ribbon](https://github.com/joebinns/joebinns.github.io/commit/d93506aa96dbc20c099afa403bfcaede3e4d38d3) in [*joebinns.github.io*](https://github.com/joebinns/joebinns.github.io) — 2 weeks ago
-- [Outline Manager sets the width of the render feature](https://github.com/joebinns/URP-Outline/commit/12e8bf351de6d8e070ab48dfb9c4f385f1b4c848) in [*URP-Outline*](https://github.com/joebinns/URP-Outline) — 3 months ago
+- [Update CV](https://github.com/joebinns/joebinns.github.io/commit/8d0c6d673daeb359f76a078b218aac79d21c69bc) in [*joebinns.github.io*](https://github.com/joebinns/joebinns.github.io) — 2 hours ago
+- [Hide TonKaTon from main page](https://github.com/joebinns/joebinns.github.io/commit/7703a7530cd8f27c8c759afa0493a966374313e3) in [*joebinns.github.io*](https://github.com/joebinns/joebinns.github.io) — 2 hours ago
+- [Update CV](https://github.com/joebinns/joebinns.github.io/commit/cd31ac09faa7deff1dd99c192a61b44df65bfbb8) in [*joebinns.github.io*](https://github.com/joebinns/joebinns.github.io) — 2 hours ago
 <!--activity_section_end-->
 > 🚀 I've automated this content using Python  and GitHub Actions.
 
